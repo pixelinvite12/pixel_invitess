@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Pixel Invitess — Digital Invitations</title>
+
+  <!-- Prevent right-click save / inspect -->
+  <meta name="robots" content="noindex"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600&family=Jost:wght@200;300;400;500&family=Great+Vibes&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NOISE TEXTURE -->
+  <div class="noise-overlay"></div>
+
+  <!-- ══════════════════════════════════
+       NAV
+  ══════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <img src="logo.png" alt="Pixel Invitess Logo" class="nav-logo-img" onerror="this.style.display='none'; document.querySelector('.nav-logo-text').style.display='flex'"/>
+      <div class="nav-logo-text" style="display:none">
+        <span class="nl-pi">PI</span>
+        <span class="nl-name">PIXEL INVITESS</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#collections">Collections</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="https://www.instagram.com/pixel_invitess?igsh=YWZ6bTQ0d3U2Yjlk" target="_blank" class="nav-ig" aria-label="Instagram">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    </a>
+  </nav>
+
+  <!-- ══════════════════════════════════
+       HERO
+  ══════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-arch-left"></div>
+    <div class="hero-arch-right"></div>
+    <div class="hero-petals" id="heroPetals"></div>
+    <div class="hero-content">
+      <div class="hero-tagline">✦ &nbsp; Digital Invitation Studio &nbsp; ✦</div>
+      <div class="hero-logo-big">
+        <img src="logo.png.jpg" alt="Pixel Invitess" class="hero-logo-img" onerror="this.style.display='none'"/>
+      </div>
+      <h1 class="hero-title">
+        <span class="ht-small">Where Every</span>
+        <span class="ht-big"><em>Celebration</em></span>
+        <span class="ht-small">Becomes a Memory</span>
+      </h1>
+      <p class="hero-sub">
+        Shaadi · Birthday · Mehndi · Haldi · Baby Shower · Engagement
+      </p>
+      <a href="#collections" class="hero-btn">
+        <span>Explore Collections</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       COLLECTIONS
+  ══════════════════════════════════ -->
+  <section class="collections-section" id="collections">
+    <div class="section-head">
+      <span class="sh-tag">✦ Our Collections</span>
+      <h2 class="sh-title">Har Occasion Ke Liye<br/><em>Ek Perfect Design</em></h2>
+    </div>
+
+    <!-- Each event category rendered by JS -->
+    <div id="collectionsContainer"></div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       ABOUT
+  ══════════════════════════════════ -->
+  <section class="about-section" id="about">
+    <div class="about-inner">
+      <div class="about-logo-col">
+        <div class="about-logo-wrap">
+          <img src="logo.png.jpg" alt="Pixel Invitess" onerror="this.style.display='none'"/>
+          <div class="al-glow"></div>
+        </div>
+        <div class="about-handle">@PixelInvitess</div>
+      </div>
+      <div class="about-text-col">
+        <span class="sh-tag">✦ About Us</span>
+        <h2>Kyun Choose Karein<br/><em>Pixel Invitess?</em></h2>
+        <p class="about-para">Hum create karte hain woh digital invitations jo aapki khushiyon ko aur khaas bana dein. Har design mein hoti hai ek kahani — aapki kahani.</p>
+        <div class="about-feats">
+          <div class="af"><div class="af-icon">⚡</div><div><strong>24 Hours Delivery</strong><p>Order ke baad ek din mein tayaar</p></div></div>
+          <div class="af"><div class="af-icon">🎨</div><div><strong>Custom Design</strong><p>Aapki pasand ke colours aur style</p></div></div>
+          <div class="af"><div class="af-icon">📱</div><div><strong>WhatsApp Ready</strong><p>Seedha share karein apno se</p></div></div>
+          <div class="af"><div class="af-icon">🔒</div><div><strong>Protected Content</strong><p>Watermark & copy-proof designs</p></div></div>
+        </div>
+        <div class="about-stats">
+          <div class="as-item"><span class="as-num">100+</span><span class="as-lbl">Happy Clients</span></div>
+          <div class="as-divider"></div>
+          <div class="as-item"><span class="as-num">50+</span><span class="as-lbl">Unique Designs</span></div>
+          <div class="as-divider"></div>
+          <div class="as-item"><span class="as-num">6+</span><span class="as-lbl">Categories</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       CONTACT STRIP
+  ══════════════════════════════════ -->
+  <section class="contact-section" id="contact">
+    <div class="contact-arch"></div>
+    <div class="contact-inner">
+      <div class="ci-tag">✦ Get In Touch</div>
+      <h2 class="ci-title">Apna Dream Invitation<br/><em>Order Karein Aaj</em></h2>
+      <p class="ci-sub">WhatsApp ya Instagram par connect karein — hum hain yahan!</p>
+      <div class="ci-btns">
+        <a href="https://wa.me/917860142874" target="_blank" class="ci-btn ci-wa">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.851L.057 23.743a.5.5 0 00.606.63l6.044-1.587A11.948 11.948 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.953 9.953 0 01-5.127-1.415l-.368-.218-3.812 1.001 1.018-3.718-.239-.383A9.952 9.952 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+          WhatsApp Us
+        </a>
+        <a href="https://www.instagram.com/pixel_invitess?igsh=YWZ6bTQ0d3U2Yjlk" target="_blank" class="ci-btn ci-ig">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       FOOTER
+  ══════════════════════════════════ -->
+  <footer class="footer">
+    <img src="logo.png.jpg" alt="Pixel Invitess" class="footer-logo-img" onerror="this.style.display='none'"/>
+    <div class="footer-name">PIXEL INVITESS</div>
+    <p class="footer-sub">© 2025 Pixel Invitess · Crafted with love ♥</p>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/pixel_invitess?igsh=YWZ6bTQ0d3U2Yjlk" target="_blank">Instagram</a>
+      <span>·</span>
+      <a href="https://wa.me/917860142874" target="_blank">WhatsApp</a>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════
+       ORDER MODAL
+  ══════════════════════════════════ -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-header">
+        <div class="mh-icon" id="mhIcon">💍</div>
+        <h3 id="modalTitle">Order Karein</h3>
+        <p>Details bharo — seedha WhatsApp par jayega</p>
+      </div>
+      <div class="modal-body">
+        <!-- Step 1: Event options -->
+        <div class="step" id="step1">
+          <div class="step-label">Event Choose Karein</div>
+          <div class="ev-opts" id="evOpts"></div>
+        </div>
+        <!-- Step 2: Fill details -->
+        <div class="step" id="step2" style="display:none">
+          <div class="step-label">Event Details Bharo</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Aapka Naam *</label>
+              <input type="text" id="hostName" placeholder="jaise: Priya Sharma"/>
+            </div>
+          </div>
+          <div class="form-row two-col">
+            <div class="form-group">
+              <label>Event Ki Tarikh *</label>
+              <input type="date" id="eventDate"/>
+            </div>
+            <div class="form-group">
+              <label>Event Ka Time</label>
+              <input type="time" id="eventTime"/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Venue / Jagah *</label>
+              <input type="text" id="venue" placeholder="jaise: Sharma Palace, Kanpur"/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Special Message (Optional)</label>
+              <textarea id="specialMsg" placeholder="Koi khaas baat likhna chahte hain?"></textarea>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Aapka WhatsApp Number *</label>
+              <input type="tel" id="clientPhone" placeholder="10 digit number" maxlength="10"/>
+            </div>
+          </div>
+          <div class="modal-actions">
+            <button class="back-btn" id="backBtn">← Wapas</button>
+            <button class="send-btn" id="sendBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.851L.057 23.743a.5.5 0 00.606.63l6.044-1.587A11.948 11.948 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.953 9.953 0 01-5.127-1.415l-.368-.218-3.812 1.001 1.018-3.718-.239-.383A9.952 9.952 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+              WhatsApp par Bhejo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
